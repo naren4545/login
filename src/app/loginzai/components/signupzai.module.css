@@ -1,0 +1,7 @@
+.bgGeerPattern{
+
+    background-image: url('../../assests/signupzai.png'); /* Use a transparent PNG gear pattern */
+    background-size: cover;
+    background-position: center; 
+    padding: 20px;
+}
