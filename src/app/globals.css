@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,15 +13,60 @@
     --foreground: #ededed;
   }
 }
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+ 
+  position: relative;
+}
+body {
+  color:#000;
+  background-size: cover;
+  
+  font-family: "Poppins",  sans-serif;
+}
+.font-r{
+  font-family: "Roboto", sans-serif;
+
+}
+.gear-pattern {
+
+  background-image: url('./assests/R.png'); /* Use a transparent PNG gear pattern */
+  background-size: cover;
+  
+  background-position: 44%;
+ 
+  
+  
+ 
 }
 
+.gear-pattern2 {
+
+  background-image: url('./assests/Desktop\ -\ 180.png'); /* Use a transparent PNG gear pattern */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: 23%;
+ 
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+
+@media screen and (max-width: 63.9375em) {
+  .gear-pattern {
+
+    background-image:none!important;
+  }
+  .gear-pattern2 {
+
+    background-image:none!important;
+  }
+  .login-text{
+
+    background-image: url(./assests/Rectangle\ 87\ \(1\)\ \(1\).png);
+    background-size: cover;
   }
 }
