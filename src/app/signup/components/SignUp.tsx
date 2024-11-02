@@ -15,14 +15,7 @@ export default function SignUP() {
 
   return (
 
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={pathname} // Ensure the key is dynamic to reflect the pathname
-        initial={{ opacity: 0.8, x: -200 }} // Initial state when component mounts
-        animate={{ opacity: 1, x: 0 }} // Animation state when the component is visible
-        exit={{ opacity: 0, x: 200 }} // Exit animation when component unmounts
-        transition={{ duration: .5 }} // Define the transition duration
-      >
+   
     <div className="gear-pattern2">
     <div className="flex flex-col-reverse lg:flex-row-reverse lg:items-center  max-w-[1300px] mx-auto h-full lg:min-h-screen ">
 
@@ -44,7 +37,6 @@ export default function SignUP() {
       </div>
     </div>
     </div>
-      </motion.div>
-    </AnimatePresence>
+     
   )
 }
