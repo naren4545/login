@@ -9,14 +9,7 @@ export default function Login() {
 
     const pathname = usePathname(); 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={pathname} // Ensure the key is dynamic to reflect the pathname
-        initial={{ opacity: 0, rotateY: -90 }} // Start off-screen flipped to the left
-        animate={{ opacity: 1, rotateY: 0 }} // Flip in to upright
-        exit={{ opacity: 0, rotateY: 90 }} // Exit flipped to the right
-        transition={{ duration: 0.3 }} // Define the transition duration
-      >
+    
     <div className="gear-pattern">
     <div className="flex lg:flex-row lg:items-center flex-col-reverse max-w-[1300px] mx-auto h-full lg:min-h-screen ">
 
@@ -36,7 +29,6 @@ export default function Login() {
       </div>
     </div>
     </div>
-    </motion.div>
-    </AnimatePresence>
+   
   )
 }
